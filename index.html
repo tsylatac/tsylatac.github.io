@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>tsylatac</title>
+<style type="text/css">
+body{font-family:"Verdana", san-serif;}
+</style>
+<script>
+var dots = window.setInterval( function() {
+    var wait = document.getElementById("wait");
+    if ( wait.innerHTML.length > 3 ) 
+        wait.innerHTML = "";
+    else 
+        wait.innerHTML += ".";
+    }, 500);
+</script>
+</head>
+<body>
+
+<div style="width:100%;height:100%;position:relative">
+  <div style="width:100%;vertical-align:middle;position:absolute;top:50%">
+    <div style="clear:both;text-align:center;">www.tsylatac.com</div>
+    <div style="float:left;width:50%">&nbsp;</div>
+    <div style="float:left;text-align:center;">Loading<span id="wait">.</span></div>
+  </div>
+</div>
+
+</body>
+</html>
+
